@@ -1,0 +1,23 @@
+{
+  "app": "python3 app.py",
+  "context": {
+    "default_instance_count": 1,
+    "default_instance_type": "ml.g5.2xlarge",
+    "default_model_package_name": "arn:aws:sagemaker:eu-west-1:985815980388:model-package/llama2-7b-f-v3-be1e9ea1b4243499baecece79bf155d9"
+  },
+  "outputsFile": "cdk_output.json",
+  "watch": {
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "requirements*.txt",
+      "source.bat",
+      "**/__init__.py",
+      "python/__pycache__",
+      "tests"
+    ],
+    "include": [
+      "**"
+    ]
+  }
+}
